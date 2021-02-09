@@ -1,0 +1,36 @@
+/*main css */
+.nav{
+    float: left;
+    top:0px;
+    height:45px;
+    width:99.5%;
+    position: absolute;
+    background-color:#062547;
+    text-align: center;
+}
+.nav a{
+    color: white;
+    font-size:25px;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.mid{
+    height:670px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-image:url(../img/1.jpg);
+    background-size: cover;
+}
+
+.footer{
+    float: left;
+    bottom:0px;
+    height:40px;
+    width:100%;
+    position:absolute;
+    color: white;
+    background-color:#062547;
+}

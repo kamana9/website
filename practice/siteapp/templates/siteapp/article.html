@@ -1,0 +1,30 @@
+{% extends  'siteapp/base.html'%}
+{%load static%}
+{%block main_content%}
+<div class="middle">
+        {% if articles %}
+        {% for article in articles %}
+        <div class="cardst">
+            <div class="image">
+              <div class ="cardimg">
+                <img src="{{article.image.url}}">
+              </div>
+            </div>
+            <div class="cardbottomt">
+              <div class="cardtitle">
+                <a href="">{{article.title}}</a>
+              </div>
+              <div class="carddesc">
+                <p>{{article.description|truncatewords:10}}</p>
+              </div>
+              <div class="author">
+                <p>By:{{article.author}}</p>
+              </div>
+              <button class="buybtn"><a href="{%url 'detail' article.id%}">Read more.....</a></button>
+            </div>
+          </div>
+
+        {% endfor %}
+        {% endif %}
+    </div>
+{%endblock%}

@@ -1,0 +1,10 @@
+{% extends  'siteapp/base.html'%}
+{%load static%}
+{%block main_content%}
+<div class="container"> 
+<h1 class="title">{{article.title}} </h1><br>
+<img class="mainimage" src="{{article.image.url}}">
+<p class="content">{{article.description}}</p><br>
+<p class="author">{{article.author}}</p>
+</div>
+{%endblock%}

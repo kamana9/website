@@ -1,0 +1,86 @@
+
+.nav{
+    float: left;
+    top:0px;
+    height:45px;
+    width:99.5%;
+    position: absolute;
+    background-color:#062547;
+    text-align: center;
+}
+.nav a{
+    color: white;
+    font-size:25px;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.middle{
+    height:670px;
+    float: left;
+    width: 100%;
+}
+.footer{
+    float: left;
+    bottom:0px;
+    height:40px;
+    width:100%;
+    position:absolute;
+    color: white;
+    background-color:#062547;
+}
+.cardst{
+        float: left;
+        height:270px;
+        display: block;
+        width:250px;
+        /* TRLB */
+        margin:80px 20px 20px 10px;
+        box-shadow: 2px 2px 10px black;
+       }
+      .image img{
+        height:95%;
+        width:90%;
+        padding:6px;
+      }
+      .cardbottomt{
+        height:120px;
+        width:100%;
+      }
+      .cardtitle{
+          height: 35px;
+          text-align: center;
+      }
+      .cardtitle a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .carddesc{
+          height: 45px;
+      }
+      .carddesc p{
+        text-align: center;
+        color: grey;
+        font-size: 15px;
+        margin-top: 4px;
+      }
+      .author{
+        height: 10px;
+        }
+        .author p{
+        text-align: center;
+        color: black;
+        font-size: 15px;
+        margin-top: 4px;
+        }
+      .buybtn{
+        margin: 10px 3px 3px 5px;
+        width:92%;
+        font-size: 15px;
+    
+      }
+    

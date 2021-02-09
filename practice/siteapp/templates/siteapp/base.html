@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'siteapp/css/index.css'%} ">
+    <link rel="stylesheet" type="text/css" href="{%static 'siteapp/css/article.css'%} ">
+    <link rel="styesheet" type="text/css" href="{%static 'siteapp/css/detail.css'%}">
+</head>
+<body>
+    <!-- for navigation bar -->
+    <div class="nav">
+        <a href="{%url 'index'%}">Home</a>
+        <a href="{%url 'article'%}">Articles</a>
+        <a href="{%url 'member'%}">Members</a>
+    </div>
+    {%block main_content%} {%endblock%}
+
+    <div class="footer">
+        <p>Made in 2021</p>
+    </div>
+</body>
+</html>
