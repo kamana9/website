@@ -1,0 +1,21 @@
+{%extends 'siteapp/base.html'%}
+{%load static%}
+{%block main_content%}
+<div class="middle"><br><br><br>
+    <form method="POST" enctype="multipart\form-data">
+        {%csrf_token%}
+        <label >Name</label><br>
+        <input name="name" type="text"><br>
+        <label >Description</label><br>
+        <input name="explain" type="text"><br>
+        <label >Age</label><br>
+        <input name="age" type="text"><br>
+        <label >Image</label><br>
+        <input  name="image" type="file"><br>
+        <button type="submit">Save</button>
+    </form>
+</div>
+{%endblock%}
+
+
+

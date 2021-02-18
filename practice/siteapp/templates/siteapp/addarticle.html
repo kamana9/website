@@ -1,0 +1,26 @@
+{%extends 'siteapp/base.html'%}
+{%load static%}
+{%block main_content%}
+    <div class="middle"><br><br><br>
+        <form method="Post" enctype="multipart/form-data">
+            {%csrf_token%}
+            <label for="title">Title</label><br>
+            <input name="title" type="text"><br>
+            <label for="description">Description</label><br>
+            <input name="description" type="text"><br>
+            <label for="image">Image</label><br>
+            <input name="image" type="file"><br>
+            <label for="author">Author</label><br>
+            <select name="authorid" required>
+                <option value="">..........</option>
+                {%if members%}
+                {%for member in members %}
+                    <option value="{{member.id}}">{{member.name}}</option>
+                {%endfor%}
+                {%endif%}
+            </select>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+{%endblock%}
+
