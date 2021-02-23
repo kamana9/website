@@ -9,15 +9,8 @@
 <body>
     <form method="POST">
         {%csrf_token%}
-        {%if errors.top%}
-        <p>{{errors.top}}</p>
-        {%endif%}
-        <label for="username">Username</label><br>
-        <input name="username" type="text"><br>
-        <label for="password">Password</label><br>
-        <input name="password" type="password"><br> 
+        {{form.as_p}}
         <button type="submit">Save</button>
-    </form> 
+    </form>
 </body>
 </html>
-

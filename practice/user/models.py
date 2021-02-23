@@ -18,3 +18,4 @@ class Student(models.Model):
 class Teacher(models.Model):
     name=models.CharField(max_length=10)
     subject=models.CharField(max_length=10)        
+    
